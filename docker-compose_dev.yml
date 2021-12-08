@@ -1,0 +1,14 @@
+version: '3.9'
+
+services:
+
+  todo-db:
+    image: postgres:14.1-bullseye
+    container_name: todo-db
+    restart: "no"
+    ports:
+      - 54320:5432
+    environment:
+      POSTGRES_USER: "todo_dba"
+      POSTGRES_PASSWORD: "&v8@qoGS<MLF"
+      POSTGRES_DB: "todo"
